@@ -89,3 +89,26 @@ window.addEventListener("scroll", () => {
 const portfolioglightbox = GLightbox({
     selector: '.img-show'
 })
+
+
+window.addEventListener('load', () =>{
+    AOS.init({
+        duration: 1500,
+        easing: 'ease-in-out'
+    });
+})
+
+
+let menu = document.querySelector('#menu-bar');
+let ul = document.querySelector('.navbar');
+
+window.onscroll = ()=>{
+    menu.classList.remove('fa-times');
+    ul.classList.remove('active');
+}
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    ul.classList.toggle('active');
+})
+
