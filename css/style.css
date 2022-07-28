@@ -120,16 +120,7 @@
     width: 50%;
     margin-top: 30px;
     margin-bottom: 25px;
-    /* animation: animat 1.2s ease-in-out; */
 }
-/* @keyframes animat{
-    from{
-        bottom: 0;
-    }
-    to{
-        bottom: 100%;
-    }
-} */
 .main .slider .slide a{
     text-decoration: none;
     color: var(--w);
@@ -346,7 +337,9 @@
 
 
 
-
+.input2{
+    display: none;
+}
 .portfolio{
     text-align: center;
     padding: 3% 7%;
@@ -369,6 +362,10 @@
     border: 1px solid white;
     overflow: hidden;
 }
+.gallary a{
+    text-decoration: none;  
+    list-style: none;
+}
 .gallary .img .text{
     position: absolute;
     transform: translate(-50%,-50%);
@@ -384,8 +381,12 @@
     transition: 1s;
 }
 .gallary .img .text .big{
-    padding: 6px 13px;
-    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: var(--w);
     color: var(--b);

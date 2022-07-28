@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="glightbox-master/dist/css/glightbox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".header">
+<body data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <section class="info">
         <div class="info-text">
             <i class="fa-solid fa-envelope"></i>
@@ -29,7 +32,7 @@
             <i class="fa-brands fa-linkedin-in"></i>
         </div>
     </section>
-    <div class="header">
+    <div class="header" id="header">
         <div class="logo">
             <h1>mamba</h1>
         </div>
@@ -82,27 +85,31 @@
             <div class="slider">
                 <div class="slide"
                     style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/home1.jpg');">
-                    <h1>Welcome to Mamba</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis deserunt quos? Quos iure optio
-                        ipsa autem suscipit sapiente quibusdaam praesentium laudantium? Non eum veritatis architecto quae
+                    <h1 class="animate__animated animate__fadeInDown">Welcome to Mamba</h1>
+                    <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vel quis deserunt quos? Quos iure optio
+                        ipsa autem suscipit sapiente quibusdaam praesentium laudantium? Non eum veritatis architecto
+                        quae
                         assumenda nemo fugit.</p>
-                    <a href="">Read more</a>
+                    <a class="animate__animated animate__fadeInUp" href="#">Read more</a>
                 </div>
                 <div class="slide"
                     style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/home2.jpg');">
-                    <h1>Lorem, ipsum dolor.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis deserunt quos? Quos iure optio
+                    <h1 class="animate__animated animate__fadeInDown">Lorem, ipsum dolor.</h1>
+                    <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vel quis deserunt quos? Quos iure optio
                         ipsa autem suscipit sapiente quibusdam praesentium laudantium? Non eum veritatis architecto quae
                         assumenda nemo fugit.</p>
-                    <a href="">Read more</a>
+                    <a class="animate__animated animate__fadeInUp" href="#">Read more</a>
                 </div>
                 <div class="slide"
                     style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/home3.jpg');">
-                    <h1>Lorem ipsum dolor sit.</h1>
-                    <p>Ut velit est quam dolor ad a aliquids qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                    <h1 class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit.</h1>
+                    <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquids qui aliquid.
+                        Sequi ea ut et est quaerat sequi nihil ut
                         aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
                         repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                    <a href="">Read more</a>
+                    <a class="animate__animated animate__fadeInUp" href="#">Read more</a>
                 </div>
                 <div class="prew" onclick="plusSlider(-1)"><i class="fa-solid fa-chevron-left"></i></div>
                 <div class="next" id="next" onclick="plusSlider(1)"><i class="fa-solid fa-chevron-right"></i></div>
@@ -117,7 +124,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" data-aos="fade-up" id="about">
         <div class="img">
             <img src="img/about.jpg" alt="">
         </div>
@@ -125,7 +132,7 @@
             <h2>About Us</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                 consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-            <span>
+            <span data-aos="fade-up">
                 <i class="fa-solid fa-fingerprint"></i>
                 <div class="text">
                     <h4>LOREM IPSUM</h4>
@@ -134,7 +141,7 @@
                         non provident</p>
                 </div>
             </span>
-            <span>
+            <span data-aos="fade-up">
                 <i class="fa-solid fa-gift"></i>
                 <div class="text">
                     <h4>NEMO ENIM</h4>
@@ -145,7 +152,7 @@
         </div>
     </section>
 
-    <section class="about-lists">
+    <section class="about-lists" data-aos="fade-up">
         <div class="container">
 
             <div class="row no-gutters">
@@ -195,65 +202,65 @@
         </div>
     </section>
 
-    <section class="blocks">
-        <div class="block">
+    <section class="blocks"  data-aos="fade-up">
+        <div class="block" data-aos="fade-up" data-aos-delay="100">
             <h1 class="number" data-val="232">000</h1>
             <p class="text">Happy Clients</p>
         </div>
-        <div class="block">
+        <div class="block" data-aos="fade-up" data-aos-delay="200">
             <h1 class="number" data-val="521">000</h1>
             <p class="text">Project</p>
         </div>
-        <div class="block">
+        <div class="block" data-aos="fade-up" data-aos-delay="300">
             <h1 class="number" data-val="1463">000</h1>
             <p class="text">Hours Of support</p>
         </div>
-        <div class="block">
+        <div class="block" data-aos="fade-up" data-aos-delay="400">
             <h1 class="number" data-val="15">00</h1>
             <p class="text">Hard Workers</p>
         </div>
     </section>
 
 
-    <div class="service" id="services">
+    <div class="service" id="services" data-aos="fade-up">
         <h1>Services</h1>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <i class="fa-solid fa-message"></i>
                 <h4>Lorem Ipsum.</h4>
                 <hr>
                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
                     non provident</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fa-solid fa-boxes-stacked"></i>
                 <h4>Lorem Ipsum.</h4>
                 <hr>
                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
                     non provident</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
                 <i class="fa-solid fa-globe"></i>
                 <h4>Lorem Ipsum.</h4>
                 <hr>
                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
                     non provident</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
                 <i class="fa-solid fa-wifi"></i>
                 <h4>Lorem Ipsum.</h4>
                 <hr>
                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
                     non provident</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
                 <i class="fa-solid fa-sun"></i>
                 <h4>Lorem Ipsum.</h4>
                 <hr>
                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
                     non provident</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
                 <i class="fa-solid fa-calendar-days"></i>
                 <h4>Lorem Ipsum.</h4>
                 <hr>
@@ -270,7 +277,7 @@
 
 
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" data-aos="fade-up">
         <h1>Our Portfolio</h1>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
             consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
@@ -289,7 +296,9 @@
                 <div class="text">
                     <h3>App1</h3>
                     <p>App</p>
-                    <p class="big">+</p>
+                    <a href="img/port-app.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img web">
@@ -297,7 +306,9 @@
                 <div class="text">
                     <h3>Web1</h3>
                     <p>WEb</p>
-                    <p class="big">+</p>
+                    <a href="img/part-web.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img app">
@@ -305,7 +316,9 @@
                 <div class="text">
                     <h3>App2</h3>
                     <p>App</p>
-                    <p class="big">+</p>
+                    <a href="img/port-app1.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img card">
@@ -313,7 +326,9 @@
                 <div class="text">
                     <h3>Card2</h3>
                     <p>Card</p>
-                    <p class="big">+</p>
+                    <a href="img/patr-card1.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img web">
@@ -321,7 +336,9 @@
                 <div class="text">
                     <h3>Web2</h3>
                     <p>WEb</p>
-                    <p class="big">+</p>
+                    <a href="img/part-web1.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img app">
@@ -329,7 +346,9 @@
                 <div class="text">
                     <h3>App3</h3>
                     <p>App</p>
-                    <p class="big">+</p>
+                    <a href="img/patr-app2.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img card">
@@ -337,7 +356,9 @@
                 <div class="text">
                     <h3>Card1</h3>
                     <p>Card</p>
-                    <p class="big">+</p>
+                    <a href="img/patr-card.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img card">
@@ -345,7 +366,9 @@
                 <div class="text">
                     <h3>Card3</h3>
                     <p>Card</p>
-                    <p class="big">+</p>
+                    <a href="img/patr-card2.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
             <div class="img web">
@@ -353,17 +376,19 @@
                 <div class="text">
                     <h3>Web3</h3>
                     <p>Web</p>
-                    <p class="big">+</p>
+                    <a href="img/part-web2.jpg" class="img-show">
+                        <i class="fa-solid fa-plus big"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="team" id="team">
-        <h1>Our Team</h1>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+    <section class="team" id="team" data-aos="fade-up">
+        <h1 data-aos="fade-up">Our Team</h1>
+        <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
                 <div class="img">
                     <img src="img/team-1.jpg" alt="">
                 </div>
@@ -379,7 +404,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
                 <div class="img">
                     <img src="img/team-2.jpg" alt="">
                 </div>
@@ -395,7 +420,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
                 <div class="img">
                     <img src="img/team-3.jpg" alt="">
                 </div>
@@ -411,7 +436,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
                 <div class="img">
                     <img src="img/team-4.jpg" alt="">
                 </div>
@@ -430,18 +455,18 @@
         </div>
     </section>
 
-    <section class="question">
+    <section class="question" data-aos="fade-up">
         <h1>Frequently Asked Questions</h1>
         <div class="blocks">
             <div class="block-left">
-                <button class="accar">
+                <button class="accar"  data-aos="fade-up">
                     Non consectetur a erat nam at lectus urna duis?
                 </button>
                 <div class="text-q">
                     <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
                         gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                 </div>
-                <button class="accar">
+                <button class="accar"  data-aos="fade-up" data-aos-delay="100">
                     Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
                 </button>
                 <div class="text-q">
@@ -451,7 +476,7 @@
                         tincidunt.
                         Lectus urna duis convallis convallis tellus</p>
                 </div>
-                <button class="accar">
+                <button class="accar"  data-aos="fade-up" data-aos-delay="200">
                     Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
                 </button>
                 <div class="text-q">
@@ -463,7 +488,7 @@
                 </div>
             </div>
             <div class="block-right">
-                <button class="accar">
+                <button class="accar"  data-aos="fade-up" data-aos-delay="300">
                     Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
                 </button>
                 <div class="text-q">
@@ -474,7 +499,7 @@
                         elit
                         ullamcorper dignissim.</p>
                 </div>
-                <button class="accar">
+                <button class="accar"  data-aos="fade-up" data-aos-delay="400">
                     Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
                 </button>
                 <div class="text-q">
@@ -485,7 +510,7 @@
                         elit
                         ullamcorper dignissim.</p>
                 </div>
-                <button class="accar">
+                <button class="accar" data-aos="fade-up" data-aos-delay="500">
                     Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
                 </button>
                 <div class="text-q">
@@ -500,22 +525,22 @@
         </div>
     </section>
 
-    <div class="contact" id="contact">
+    <div class="contact" id="contact" data-aos="fade-up">
         <h1>Contact Us</h1>
         <div class="location">
-            <div class="address">
+            <div class="address"  data-aos="fade-up" data-aos-delay="100">
                 <i class="fa-solid fa-location-dot"></i>
                 <h4>Our Address</h4>
                 <p>A108 Adam Street, New York, NY 535022</p>
             </div>
-            <div class="address-right">
-                <div class="address">
+            <div class="address-right"  data-aos="fade-up">
+                <div class="address"  data-aos="fade-up" data-aos-delay="200">
                     <i class="fa-solid fa-location-dot"></i>
                     <h4>Email Us</h4>
                     <p>info@example.com <br>
                         contact@example.com</p>
                 </div>
-                <div class="address">
+                <div class="address" data-aos="fade-up" data-aos-delay="300">
                     <i class="fa-solid fa-location-dot"></i>
                     <h4>Our Address</h4>
                     <p>+1 5589 55488 55 <br>
@@ -523,7 +548,7 @@
                 </div>
             </div>
         </div>
-        <div class="form">
+        <div class="form"  data-aos="fade-up" data-aos-delay="400">
             <form action="">
                 <div class="row">
                     <div class="col col-6 form-group">
@@ -624,7 +649,19 @@
         </a>
     </div>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="glightbox-master/dist/js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        window.addEventListener('load', () =>{
+            AOS.init({
+                duration: 1500,
+                easing: 'ease-in-out'
+            });
+        })
+
+    </script>
 </body>
 
 </html>

@@ -34,7 +34,7 @@ setInterval(function () {
 
 
 let valueDisplay = document.querySelectorAll('.number');
-let interval = 10;
+let interval = 1;
 
 valueDisplay.forEach((valueDisplay) => {
     let startValue = 0;
@@ -84,3 +84,8 @@ window.addEventListener("scroll", () => {
 
 
 
+
+
+const portfolioglightbox = GLightbox({
+    selector: '.img-show'
+})
